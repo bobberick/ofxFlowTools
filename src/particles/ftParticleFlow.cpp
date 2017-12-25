@@ -57,8 +57,8 @@ namespace flowTools {
 		numParticlesX = _numParticlesX;
 		numParticlesY = _numParticlesY;
 		numParticles = (numParticlesX * numParticlesY);
-				
-		particleMesh.setMode(OF_PRIMITIVE_POINTS);
+
+		particleMesh.setMode(OF_PRIMITIVE_LINES);
 		for(int x = 0; x < _numParticlesX; x++){
 			for(int y = 0; y < _numParticlesY; y++){
 				particleMesh.addVertex(ofVec3f(x,y));
